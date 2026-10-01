@@ -23,6 +23,7 @@
 - ✅ **答案解析** - 包含详细解题步骤
 - ✅ **Markdown 格式** - 可在 Obsidian、Typora、VS Code 等编辑器中阅读
 - ✅ **结构清晰** - 选择题、填空题、解答题分类整理
+- ✅ **知识点导航** - 同时支持按年份、学科和知识点检索真题
 
 ---
 
@@ -36,6 +37,11 @@ Kaoyan-Math1-Papers/
 │   ├── ...
 │   ├── 2025年数学一真题.md
 │   └── images/               # 配图（可选）
+├── knowledge/                 # 按知识点组织的逐题 Markdown 题库
+│   ├── 高等数学/
+│   ├── 线性代数/
+│   └── 概率论与数理统计/
+├── solutions/                 # 历年解析资料
 ├── README.md
 └── LICENSE
 ```
@@ -46,8 +52,11 @@ Kaoyan-Math1-Papers/
 
 ### Obsidian
 
-1. 将 `papers/` 文件夹复制到你的 Obsidian Vault
+1. 将整个仓库作为 Obsidian Vault 打开
 2. 启用 LaTeX 公式渲染（默认支持）
+3. 打开 [`knowledge/README.md`](knowledge/README.md)，按学科和知识点浏览单题文件
+
+`knowledge/` 中每道题对应一个 Markdown 文件，文件只包含原题内容和来源信息。综合题按主要知识点存放一份。
 
 ### VS Code
 
